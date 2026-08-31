@@ -64,7 +64,7 @@ ILLUSIONTION_EXTERNAL_PROOF_CERTIFICATION_PASS
 
 ## Architecture
 
-![Illusiontion architecture](architecture/Illusiontion_Architecture.png)
+![Illusiontion Architecture](./Illusiontion_Architecture.png)
 
 ```mermaid
 flowchart LR
