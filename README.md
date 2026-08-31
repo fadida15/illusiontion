@@ -90,7 +90,6 @@ The seven reviewer roles are independently invoked and context-isolated. The cer
 ## Repository layout
 
 - `app/` — Google ADK runtime, reviewers, deterministic governance, evidence handling, persistence, and proof signing.
-- `architecture/` — the single architecture image used in this README.
 - `certification/final_pass/` — the frozen certified PASS case and its bound artifacts.
 - `certification/conservative_hold/` — the frozen HOLD case showing successful execution without authorization.
 - `proof_certification/` — standalone offline verifier, adversarial certifier, public verification key, proof, and signature.
