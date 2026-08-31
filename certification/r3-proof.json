@@ -1,0 +1,27 @@
+[
+  {
+    "evidence_id": "e1",
+    "source": "https://csrc.nist.gov/glossary/term/digital_signature",
+    "source_group": "nist-digital-signature"
+  },
+  {
+    "evidence_id": "e2",
+    "source": "https://csrc.nist.gov/glossary/term/public_key",
+    "source_group": "nist-public-key"
+  },
+  {
+    "evidence_id": "e3",
+    "source": "https://csrc.nist.gov/glossary/term/private_key",
+    "source_group": "nist-private-key"
+  },
+  {
+    "evidence_id": "e4",
+    "source": "https://www.rfc-editor.org/rfc/rfc7515.html",
+    "source_group": "ietf-jws-standard"
+  },
+  {
+    "evidence_id": "e5",
+    "source": "https://docs.cloud.google.com/run/docs",
+    "source_group": "irrelevant-cloud-run-documentation"
+  }
+]

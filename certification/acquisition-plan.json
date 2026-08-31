@@ -1,0 +1,418 @@
+{
+  "decision": {
+    "allowed_output": "Preserve the claim as unresolved; request corrective evidence or review.",
+    "atom_assurance": [
+      {
+        "atom_id": "a1",
+        "captured_origins": [
+          "https://csrc.nist.gov"
+        ],
+        "observed_captured_origins": 1,
+        "observed_source_groups": 1,
+        "observed_sources": 1,
+        "required_captured_origins": 2,
+        "required_source_groups": 2,
+        "source_groups": [
+          "nist-digital-signature"
+        ],
+        "sources": [
+          "https://csrc.nist.gov/glossary/term/digital_signature"
+        ],
+        "status": "HOLD"
+      },
+      {
+        "atom_id": "a2",
+        "captured_origins": [
+          "https://csrc.nist.gov"
+        ],
+        "observed_captured_origins": 1,
+        "observed_source_groups": 1,
+        "observed_sources": 1,
+        "required_captured_origins": 2,
+        "required_source_groups": 2,
+        "source_groups": [
+          "nist-digital-signature"
+        ],
+        "sources": [
+          "https://csrc.nist.gov/glossary/term/digital_signature"
+        ],
+        "status": "HOLD"
+      }
+    ],
+    "calibration_assurance": {
+      "automatic_relaxation_allowed": false,
+      "blocker_counts": {
+        "EVIDENCE_ORIGIN_DIVERSITY_GAP": 1,
+        "SOURCE_DIVERSITY_GAP": 1
+      },
+      "claim_conflicts": [],
+      "evidence_debt": [
+        "SOURCE_DIVERSITY_GAP",
+        "EVIDENCE_ORIGIN_DIVERSITY_GAP"
+      ],
+      "hard_risks": [],
+      "recovery_actions": [
+        "Repair or refresh the identified evidence debt, then rerun; do not auto-promote."
+      ],
+      "semantic_debt": [],
+      "status": "EVIDENCE_DEBT_HOLD"
+    },
+    "claim_id": "hackathon-live-acquisition-006",
+    "decision_sha256": "4feb041f0aaf5d7b6c045d3dc5dc3596aa44c84b06940d8c701b75c8461cc329",
+    "declared_scope": "Only the NIST Digital Signature glossary page acquired by the trusted Illusiontion runtime.",
+    "evidence_admission_status": {
+      "e1": "CAPTURED"
+    },
+    "evidence_digests": {
+      "e1": "06fe3a76e4aa77843bb491bab954ecf963d74b8107da90c3b3d14edacc9e6580"
+    },
+    "evidence_transition": {
+      "added_ids": [],
+      "material_omission_ids": [],
+      "mutated_ids": [],
+      "omitted_ids": [],
+      "reviewer_ids": [
+        "e1"
+      ],
+      "status": "PASS",
+      "transition_ids": [
+        "e1"
+      ],
+      "universe_ids": [
+        "e1"
+      ]
+    },
+    "external_witness_assurance": {
+      "check_count": 0,
+      "counterexample_atom_ids": [],
+      "covered_atom_ids": [],
+      "nonindependent_check_ids": [],
+      "required_atom_ids": [],
+      "status": "NOT_REQUIRED",
+      "unresolved_atom_ids": [],
+      "verifier_id": "",
+      "verifier_public_key": ""
+    },
+    "findings": [
+      {
+        "evidence_ids": [
+          "e1"
+        ],
+        "finding_type": "SOURCE_DIVERSITY_GAP",
+        "message": "Atomic claim a1 does not meet the MODEL_BOUND declared source-diversity policy.",
+        "reviewer": "evidence",
+        "severity": "WARNING"
+      },
+      {
+        "evidence_ids": [
+          "e1"
+        ],
+        "finding_type": "EVIDENCE_ORIGIN_DIVERSITY_GAP",
+        "message": "Atomic claim a1 lacks enough distinct runtime-attested source origins for fortified assurance.",
+        "reviewer": "evidence",
+        "severity": "WARNING"
+      },
+      {
+        "evidence_ids": [
+          "e1"
+        ],
+        "finding_type": "SOURCE_DIVERSITY_GAP",
+        "message": "Atomic claim a2 does not meet the MODEL_BOUND declared source-diversity policy.",
+        "reviewer": "evidence",
+        "severity": "WARNING"
+      },
+      {
+        "evidence_ids": [
+          "e1"
+        ],
+        "finding_type": "EVIDENCE_ORIGIN_DIVERSITY_GAP",
+        "message": "Atomic claim a2 lacks enough distinct runtime-attested source origins for fortified assurance.",
+        "reviewer": "evidence",
+        "severity": "WARNING"
+      }
+    ],
+    "input_sha256": "5d67fe09138c896bf7a4fc6ba93e6895e8d169b1171e086f06d09f207bca2c14",
+    "reasons": [
+      "SOURCE_DIVERSITY_GAP: a1 requires 2 declared source group(s) and 2 distinct source locator(s); observed groups=1, locators=1.",
+      "EVIDENCE_ORIGIN_DIVERSITY_GAP: a1 requires 2 runtime-attested source origin(s); observed=1.",
+      "SOURCE_DIVERSITY_GAP: a2 requires 2 declared source group(s) and 2 distinct source locator(s); observed groups=1, locators=1.",
+      "EVIDENCE_ORIGIN_DIVERSITY_GAP: a2 requires 2 runtime-attested source origin(s); observed=1.",
+      "EVIDENCE_ORIGIN_DIVERSITY_GAP: 2",
+      "SOURCE_DIVERSITY_GAP: 2"
+    ],
+    "reviewer_execution": {
+      "challenger": "MODEL_LIVE",
+      "decomposer": "MODEL_LIVE",
+      "evidence": "MODEL_LIVE",
+      "scope": "MODEL_LIVE",
+      "security": "MODEL_LIVE"
+    },
+    "reviewer_status": {
+      "challenger": "SUCCESS",
+      "decomposer": "SUCCESS",
+      "evidence": "SUCCESS",
+      "scope": "SUCCESS",
+      "security": "SUCCESS"
+    },
+    "semantic_assurance": {
+      "completed_reviewers": [],
+      "distinct_model_ids": 0,
+      "model_ids": [],
+      "required_reviewers": [],
+      "status": "NOT_REQUIRED",
+      "strategy_count": 0
+    },
+    "semantic_obligation_assurance": {
+      "atom_ids": [],
+      "failed_obligations": [],
+      "frame_count": 0,
+      "missing_obligations": [],
+      "obligation_count": 0,
+      "representation_mismatch_atoms": [],
+      "required_frame_reviewers": [],
+      "status": "NOT_REQUIRED"
+    },
+    "usefulness_assurance": {
+      "atom_blockers": {
+        "a1": [
+          "ATOM_ASSURANCE_HOLD",
+          "SOURCE_DIVERSITY_GAP",
+          "EVIDENCE_ORIGIN_DIVERSITY_GAP"
+        ],
+        "a2": [
+          "ATOM_ASSURANCE_HOLD",
+          "SOURCE_DIVERSITY_GAP",
+          "EVIDENCE_ORIGIN_DIVERSITY_GAP"
+        ]
+      },
+      "global_blockers": [
+        "PROFILE_NOT_ATOM_SALVAGE_ELIGIBLE"
+      ],
+      "held_atom_ids": [
+        "a1",
+        "a2"
+      ],
+      "preservation_rate": 0.0,
+      "preserved_atom_count": 0,
+      "promotable_atom_ids": [],
+      "promotable_statements": {},
+      "recovery_requirements": [
+        "Resolve global blocker: PROFILE_NOT_ATOM_SALVAGE_ELIGIBLE"
+      ],
+      "status": "HARD_HOLD",
+      "total_atom_count": 2
+    },
+    "verdict": "HOLD",
+    "witness_ancestry_assurance": {
+      "ancestry_manifest_count": 0,
+      "errors": [],
+      "overlap_fingerprints": {},
+      "selected_valid_ancestry_count": 0,
+      "status": "NOT_REQUIRED",
+      "universe_group_root_fingerprints": {},
+      "valid_ancestry_manifest_count": 0
+    },
+    "witness_provenance_assurance": {
+      "errors": [],
+      "measurement_receipt_count": 0,
+      "selected_dependency_groups": {},
+      "selected_measurement_authorities": {},
+      "status": "NOT_REQUIRED",
+      "universe_dependency_groups": {},
+      "universe_measurement_authorities": {},
+      "valid_measurement_receipt_count": 0
+    },
+    "witness_quorum_assurance": {
+      "authority_ids": [],
+      "authority_public_keys": [],
+      "counterexample_check_ids": [],
+      "covered_check_ids": [],
+      "disagreement_check_ids": [],
+      "invalid_authority_ids": [],
+      "required_authority_quorum": 0,
+      "selected_check_ids": [],
+      "selection_verified": false,
+      "status": "NOT_REQUIRED",
+      "unresolved_check_ids": [],
+      "valid_authority_count": 0
+    },
+    "witness_registry_ancestry_assurance": {
+      "errors": [],
+      "invalid_registry_ancestry_manifests": [],
+      "missing_registry_ancestry_bindings": [],
+      "registry_ancestry_manifest_count": 0,
+      "registry_ancestry_overlap_fingerprints": {},
+      "registry_ancestry_root_fingerprints": {},
+      "status": "NOT_REQUIRED",
+      "valid_registry_ancestry_manifest_count": 0
+    },
+    "witness_registry_assurance": {
+      "errors": [],
+      "invalid_attestations": [],
+      "negative_attestations": [],
+      "registry_attestation_count": 0,
+      "registry_disclosure_mismatches": {},
+      "registry_source_groups": {},
+      "status": "NOT_REQUIRED",
+      "valid_registry_authority_counts": {}
+    },
+    "witness_registry_observation_assurance": {
+      "errors": [],
+      "invalid_observations": [],
+      "negative_observations": [],
+      "observation_count": 0,
+      "observer_source_groups": {},
+      "registry_observation_disclosure_mismatches": {},
+      "status": "NOT_REQUIRED",
+      "valid_observer_counts": {}
+    }
+  },
+  "decision_store": {
+    "backend": "firestore",
+    "collection": "illusiontion_decisions",
+    "record_id": "hackathon-live-acquisition-006"
+  },
+  "external_proof": {
+    "canonical_proof_base64": "eyJjbGFpbV9pZCI6ImhhY2thdGhvbi1saXZlLWFjcXVpc2l0aW9uLTAwNiIsImRlY2lzaW9uIjp7ImFsbG93ZWRfb3V0cHV0IjoiUHJlc2VydmUgdGhlIGNsYWltIGFzIHVucmVzb2x2ZWQ7IHJlcXVlc3QgY29ycmVjdGl2ZSBldmlkZW5jZSBvciByZXZpZXcuIiwiYXRvbV9hc3N1cmFuY2UiOlt7ImF0b21faWQiOiJhMSIsImNhcHR1cmVkX29yaWdpbnMiOlsiaHR0cHM6Ly9jc3JjLm5pc3QuZ292Il0sIm9ic2VydmVkX2NhcHR1cmVkX29yaWdpbnMiOjEsIm9ic2VydmVkX3NvdXJjZV9ncm91cHMiOjEsIm9ic2VydmVkX3NvdXJjZXMiOjEsInJlcXVpcmVkX2NhcHR1cmVkX29yaWdpbnMiOjIsInJlcXVpcmVkX3NvdXJjZV9ncm91cHMiOjIsInNvdXJjZV9ncm91cHMiOlsibmlzdC1kaWdpdGFsLXNpZ25hdHVyZSJdLCJzb3VyY2VzIjpbImh0dHBzOi8vY3NyYy5uaXN0Lmdvdi9nbG9zc2FyeS90ZXJtL2RpZ2l0YWxfc2lnbmF0dXJlIl0sInN0YXR1cyI6IkhPTEQifSx7ImF0b21faWQiOiJhMiIsImNhcHR1cmVkX29yaWdpbnMiOlsiaHR0cHM6Ly9jc3JjLm5pc3QuZ292Il0sIm9ic2VydmVkX2NhcHR1cmVkX29yaWdpbnMiOjEsIm9ic2VydmVkX3NvdXJjZV9ncm91cHMiOjEsIm9ic2VydmVkX3NvdXJjZXMiOjEsInJlcXVpcmVkX2NhcHR1cmVkX29yaWdpbnMiOjIsInJlcXVpcmVkX3NvdXJjZV9ncm91cHMiOjIsInNvdXJjZV9ncm91cHMiOlsibmlzdC1kaWdpdGFsLXNpZ25hdHVyZSJdLCJzb3VyY2VzIjpbImh0dHBzOi8vY3NyYy5uaXN0Lmdvdi9nbG9zc2FyeS90ZXJtL2RpZ2l0YWxfc2lnbmF0dXJlIl0sInN0YXR1cyI6IkhPTEQifV0sImNhbGlicmF0aW9uX2Fzc3VyYW5jZSI6eyJhdXRvbWF0aWNfcmVsYXhhdGlvbl9hbGxvd2VkIjpmYWxzZSwiYmxvY2tlcl9jb3VudHMiOnsiRVZJREVOQ0VfT1JJR0lOX0RJVkVSU0lUWV9HQVAiOjEsIlNPVVJDRV9ESVZFUlNJVFlfR0FQIjoxfSwiY2xhaW1fY29uZmxpY3RzIjpbXSwiZXZpZGVuY2VfZGVidCI6WyJTT1VSQ0VfRElWRVJTSVRZX0dBUCIsIkVWSURFTkNFX09SSUdJTl9ESVZFUlNJVFlfR0FQIl0sImhhcmRfcmlza3MiOltdLCJyZWNvdmVyeV9hY3Rpb25zIjpbIlJlcGFpciBvciByZWZyZXNoIHRoZSBpZGVudGlmaWVkIGV2aWRlbmNlIGRlYnQsIHRoZW4gcmVydW47IGRvIG5vdCBhdXRvLXByb21vdGUuIl0sInNlbWFudGljX2RlYnQiOltdLCJzdGF0dXMiOiJFVklERU5DRV9ERUJUX0hPTEQifSwiY2xhaW1faWQiOiJoYWNrYXRob24tbGl2ZS1hY3F1aXNpdGlvbi0wMDYiLCJkZWNpc2lvbl9zaGEyNTYiOiI0ZmViMDQxZjBhYWY1ZDdiNmMwNDVkM2RjNWRjMzU5NmFhNDRjODRiMDY5NDBkOGM3MDFiNzVjODQ2MWNjMzI5IiwiZGVjbGFyZWRfc2NvcGUiOiJPbmx5IHRoZSBOSVNUIERpZ2l0YWwgU2lnbmF0dXJlIGdsb3NzYXJ5IHBhZ2UgYWNxdWlyZWQgYnkgdGhlIHRydXN0ZWQgSWxsdXNpb250aW9uIHJ1bnRpbWUuIiwiZXZpZGVuY2VfYWRtaXNzaW9uX3N0YXR1cyI6eyJlMSI6IkNBUFRVUkVEIn0sImV2aWRlbmNlX2RpZ2VzdHMiOnsiZTEiOiIwNmZlM2E3NmU0YWE3Nzg0M2JiNDkxYmFiOTU0ZWNmOTYzZDc0YjgxMDdkYTkwYzNiM2QxNGVkYWNjOWU2NTgwIn0sImV2aWRlbmNlX3RyYW5zaXRpb24iOnsiYWRkZWRfaWRzIjpbXSwibWF0ZXJpYWxfb21pc3Npb25faWRzIjpbXSwibXV0YXRlZF9pZHMiOltdLCJvbWl0dGVkX2lkcyI6W10sInJldmlld2VyX2lkcyI6WyJlMSJdLCJzdGF0dXMiOiJQQVNTIiwidHJhbnNpdGlvbl9pZHMiOlsiZTEiXSwidW5pdmVyc2VfaWRzIjpbImUxIl19LCJleHRlcm5hbF93aXRuZXNzX2Fzc3VyYW5jZSI6eyJjaGVja19jb3VudCI6MCwiY291bnRlcmV4YW1wbGVfYXRvbV9pZHMiOltdLCJjb3ZlcmVkX2F0b21faWRzIjpbXSwibm9uaW5kZXBlbmRlbnRfY2hlY2tfaWRzIjpbXSwicmVxdWlyZWRfYXRvbV9pZHMiOltdLCJzdGF0dXMiOiJOT1RfUkVRVUlSRUQiLCJ1bnJlc29sdmVkX2F0b21faWRzIjpbXSwidmVyaWZpZXJfaWQiOiIiLCJ2ZXJpZmllcl9wdWJsaWNfa2V5IjoiIn0sImZpbmRpbmdzIjpbeyJldmlkZW5jZV9pZHMiOlsiZTEiXSwiZmluZGluZ190eXBlIjoiU09VUkNFX0RJVkVSU0lUWV9HQVAiLCJtZXNzYWdlIjoiQXRvbWljIGNsYWltIGExIGRvZXMgbm90IG1lZXQgdGhlIE1PREVMX0JPVU5EIGRlY2xhcmVkIHNvdXJjZS1kaXZlcnNpdHkgcG9saWN5LiIsInJldmlld2VyIjoiZXZpZGVuY2UiLCJzZXZlcml0eSI6IldBUk5JTkcifSx7ImV2aWRlbmNlX2lkcyI6WyJlMSJdLCJmaW5kaW5nX3R5cGUiOiJFVklERU5DRV9PUklHSU5fRElWRVJTSVRZX0dBUCIsIm1lc3NhZ2UiOiJBdG9taWMgY2xhaW0gYTEgbGFja3MgZW5vdWdoIGRpc3RpbmN0IHJ1bnRpbWUtYXR0ZXN0ZWQgc291cmNlIG9yaWdpbnMgZm9yIGZvcnRpZmllZCBhc3N1cmFuY2UuIiwicmV2aWV3ZXIiOiJldmlkZW5jZSIsInNldmVyaXR5IjoiV0FSTklORyJ9LHsiZXZpZGVuY2VfaWRzIjpbImUxIl0sImZpbmRpbmdfdHlwZSI6IlNPVVJDRV9ESVZFUlNJVFlfR0FQIiwibWVzc2FnZSI6IkF0b21pYyBjbGFpbSBhMiBkb2VzIG5vdCBtZWV0IHRoZSBNT0RFTF9CT1VORCBkZWNsYXJlZCBzb3VyY2UtZGl2ZXJzaXR5IHBvbGljeS4iLCJyZXZpZXdlciI6ImV2aWRlbmNlIiwic2V2ZXJpdHkiOiJXQVJOSU5HIn0seyJldmlkZW5jZV9pZHMiOlsiZTEiXSwiZmluZGluZ190eXBlIjoiRVZJREVOQ0VfT1JJR0lOX0RJVkVSU0lUWV9HQVAiLCJtZXNzYWdlIjoiQXRvbWljIGNsYWltIGEyIGxhY2tzIGVub3VnaCBkaXN0aW5jdCBydW50aW1lLWF0dGVzdGVkIHNvdXJjZSBvcmlnaW5zIGZvciBmb3J0aWZpZWQgYXNzdXJhbmNlLiIsInJldmlld2VyIjoiZXZpZGVuY2UiLCJzZXZlcml0eSI6IldBUk5JTkcifV0sImlucHV0X3NoYTI1NiI6IjVkNjdmZTA5MTM4Yzg5NmJmN2E0ZmM2YmE5M2U2ODk1ZThkMTY5YjExNzFlMDg2ZjA2ZDA5ZjIwN2JjYTJjMTQiLCJyZWFzb25zIjpbIlNPVVJDRV9ESVZFUlNJVFlfR0FQOiBhMSByZXF1aXJlcyAyIGRlY2xhcmVkIHNvdXJjZSBncm91cChzKSBhbmQgMiBkaXN0aW5jdCBzb3VyY2UgbG9jYXRvcihzKTsgb2JzZXJ2ZWQgZ3JvdXBzPTEsIGxvY2F0b3JzPTEuIiwiRVZJREVOQ0VfT1JJR0lOX0RJVkVSU0lUWV9HQVA6IGExIHJlcXVpcmVzIDIgcnVudGltZS1hdHRlc3RlZCBzb3VyY2Ugb3JpZ2luKHMpOyBvYnNlcnZlZD0xLiIsIlNPVVJDRV9ESVZFUlNJVFlfR0FQOiBhMiByZXF1aXJlcyAyIGRlY2xhcmVkIHNvdXJjZSBncm91cChzKSBhbmQgMiBkaXN0aW5jdCBzb3VyY2UgbG9jYXRvcihzKTsgb2JzZXJ2ZWQgZ3JvdXBzPTEsIGxvY2F0b3JzPTEuIiwiRVZJREVOQ0VfT1JJR0lOX0RJVkVSU0lUWV9HQVA6IGEyIHJlcXVpcmVzIDIgcnVudGltZS1hdHRlc3RlZCBzb3VyY2Ugb3JpZ2luKHMpOyBvYnNlcnZlZD0xLiIsIkVWSURFTkNFX09SSUdJTl9ESVZFUlNJVFlfR0FQOiAyIiwiU09VUkNFX0RJVkVSU0lUWV9HQVA6IDIiXSwicmV2aWV3ZXJfZXhlY3V0aW9uIjp7ImNoYWxsZW5nZXIiOiJNT0RFTF9MSVZFIiwiZGVjb21wb3NlciI6Ik1PREVMX0xJVkUiLCJldmlkZW5jZSI6Ik1PREVMX0xJVkUiLCJzY29wZSI6Ik1PREVMX0xJVkUiLCJzZWN1cml0eSI6Ik1PREVMX0xJVkUifSwicmV2aWV3ZXJfc3RhdHVzIjp7ImNoYWxsZW5nZXIiOiJTVUNDRVNTIiwiZGVjb21wb3NlciI6IlNVQ0NFU1MiLCJldmlkZW5jZSI6IlNVQ0NFU1MiLCJzY29wZSI6IlNVQ0NFU1MiLCJzZWN1cml0eSI6IlNVQ0NFU1MifSwic2VtYW50aWNfYXNzdXJhbmNlIjp7ImNvbXBsZXRlZF9yZXZpZXdlcnMiOltdLCJkaXN0aW5jdF9tb2RlbF9pZHMiOjAsIm1vZGVsX2lkcyI6W10sInJlcXVpcmVkX3Jldmlld2VycyI6W10sInN0YXR1cyI6Ik5PVF9SRVFVSVJFRCIsInN0cmF0ZWd5X2NvdW50IjowfSwic2VtYW50aWNfb2JsaWdhdGlvbl9hc3N1cmFuY2UiOnsiYXRvbV9pZHMiOltdLCJmYWlsZWRfb2JsaWdhdGlvbnMiOltdLCJmcmFtZV9jb3VudCI6MCwibWlzc2luZ19vYmxpZ2F0aW9ucyI6W10sIm9ibGlnYXRpb25fY291bnQiOjAsInJlcHJlc2VudGF0aW9uX21pc21hdGNoX2F0b21zIjpbXSwicmVxdWlyZWRfZnJhbWVfcmV2aWV3ZXJzIjpbXSwic3RhdHVzIjoiTk9UX1JFUVVJUkVEIn0sInVzZWZ1bG5lc3NfYXNzdXJhbmNlIjp7ImF0b21fYmxvY2tlcnMiOnsiYTEiOlsiQVRPTV9BU1NVUkFOQ0VfSE9MRCIsIlNPVVJDRV9ESVZFUlNJVFlfR0FQIiwiRVZJREVOQ0VfT1JJR0lOX0RJVkVSU0lUWV9HQVAiXSwiYTIiOlsiQVRPTV9BU1NVUkFOQ0VfSE9MRCIsIlNPVVJDRV9ESVZFUlNJVFlfR0FQIiwiRVZJREVOQ0VfT1JJR0lOX0RJVkVSU0lUWV9HQVAiXX0sImdsb2JhbF9ibG9ja2VycyI6WyJQUk9GSUxFX05PVF9BVE9NX1NBTFZBR0VfRUxJR0lCTEUiXSwiaGVsZF9hdG9tX2lkcyI6WyJhMSIsImEyIl0sInByZXNlcnZhdGlvbl9yYXRlIjowLjAsInByZXNlcnZlZF9hdG9tX2NvdW50IjowLCJwcm9tb3RhYmxlX2F0b21faWRzIjpbXSwicHJvbW90YWJsZV9zdGF0ZW1lbnRzIjp7fSwicmVjb3ZlcnlfcmVxdWlyZW1lbnRzIjpbIlJlc29sdmUgZ2xvYmFsIGJsb2NrZXI6IFBST0ZJTEVfTk9UX0FUT01fU0FMVkFHRV9FTElHSUJMRSJdLCJzdGF0dXMiOiJIQVJEX0hPTEQiLCJ0b3RhbF9hdG9tX2NvdW50IjoyfSwidmVyZGljdCI6IkhPTEQiLCJ3aXRuZXNzX2FuY2VzdHJ5X2Fzc3VyYW5jZSI6eyJhbmNlc3RyeV9tYW5pZmVzdF9jb3VudCI6MCwiZXJyb3JzIjpbXSwib3ZlcmxhcF9maW5nZXJwcmludHMiOnt9LCJzZWxlY3RlZF92YWxpZF9hbmNlc3RyeV9jb3VudCI6MCwic3RhdHVzIjoiTk9UX1JFUVVJUkVEIiwidW5pdmVyc2VfZ3JvdXBfcm9vdF9maW5nZXJwcmludHMiOnt9LCJ2YWxpZF9hbmNlc3RyeV9tYW5pZmVzdF9jb3VudCI6MH0sIndpdG5lc3NfcHJvdmVuYW5jZV9hc3N1cmFuY2UiOnsiZXJyb3JzIjpbXSwibWVhc3VyZW1lbnRfcmVjZWlwdF9jb3VudCI6MCwic2VsZWN0ZWRfZGVwZW5kZW5jeV9ncm91cHMiOnt9LCJzZWxlY3RlZF9tZWFzdXJlbWVudF9hdXRob3JpdGllcyI6e30sInN0YXR1cyI6Ik5PVF9SRVFVSVJFRCIsInVuaXZlcnNlX2RlcGVuZGVuY3lfZ3JvdXBzIjp7fSwidW5pdmVyc2VfbWVhc3VyZW1lbnRfYXV0aG9yaXRpZXMiOnt9LCJ2YWxpZF9tZWFzdXJlbWVudF9yZWNlaXB0X2NvdW50IjowfSwid2l0bmVzc19xdW9ydW1fYXNzdXJhbmNlIjp7ImF1dGhvcml0eV9pZHMiOltdLCJhdXRob3JpdHlfcHVibGljX2tleXMiOltdLCJjb3VudGVyZXhhbXBsZV9jaGVja19pZHMiOltdLCJjb3ZlcmVkX2NoZWNrX2lkcyI6W10sImRpc2FncmVlbWVudF9jaGVja19pZHMiOltdLCJpbnZhbGlkX2F1dGhvcml0eV9pZHMiOltdLCJyZXF1aXJlZF9hdXRob3JpdHlfcXVvcnVtIjowLCJzZWxlY3RlZF9jaGVja19pZHMiOltdLCJzZWxlY3Rpb25fdmVyaWZpZWQiOmZhbHNlLCJzdGF0dXMiOiJOT1RfUkVRVUlSRUQiLCJ1bnJlc29sdmVkX2NoZWNrX2lkcyI6W10sInZhbGlkX2F1dGhvcml0eV9jb3VudCI6MH0sIndpdG5lc3NfcmVnaXN0cnlfYW5jZXN0cnlfYXNzdXJhbmNlIjp7ImVycm9ycyI6W10sImludmFsaWRfcmVnaXN0cnlfYW5jZXN0cnlfbWFuaWZlc3RzIjpbXSwibWlzc2luZ19yZWdpc3RyeV9hbmNlc3RyeV9iaW5kaW5ncyI6W10sInJlZ2lzdHJ5X2FuY2VzdHJ5X21hbmlmZXN0X2NvdW50IjowLCJyZWdpc3RyeV9hbmNlc3RyeV9vdmVybGFwX2ZpbmdlcnByaW50cyI6e30sInJlZ2lzdHJ5X2FuY2VzdHJ5X3Jvb3RfZmluZ2VycHJpbnRzIjp7fSwic3RhdHVzIjoiTk9UX1JFUVVJUkVEIiwidmFsaWRfcmVnaXN0cnlfYW5jZXN0cnlfbWFuaWZlc3RfY291bnQiOjB9LCJ3aXRuZXNzX3JlZ2lzdHJ5X2Fzc3VyYW5jZSI6eyJlcnJvcnMiOltdLCJpbnZhbGlkX2F0dGVzdGF0aW9ucyI6W10sIm5lZ2F0aXZlX2F0dGVzdGF0aW9ucyI6W10sInJlZ2lzdHJ5X2F0dGVzdGF0aW9uX2NvdW50IjowLCJyZWdpc3RyeV9kaXNjbG9zdXJlX21pc21hdGNoZXMiOnt9LCJyZWdpc3RyeV9zb3VyY2VfZ3JvdXBzIjp7fSwic3RhdHVzIjoiTk9UX1JFUVVJUkVEIiwidmFsaWRfcmVnaXN0cnlfYXV0aG9yaXR5X2NvdW50cyI6e319LCJ3aXRuZXNzX3JlZ2lzdHJ5X29ic2VydmF0aW9uX2Fzc3VyYW5jZSI6eyJlcnJvcnMiOltdLCJpbnZhbGlkX29ic2VydmF0aW9ucyI6W10sIm5lZ2F0aXZlX29ic2VydmF0aW9ucyI6W10sIm9ic2VydmF0aW9uX2NvdW50IjowLCJvYnNlcnZlcl9zb3VyY2VfZ3JvdXBzIjp7fSwicmVnaXN0cnlfb2JzZXJ2YXRpb25fZGlzY2xvc3VyZV9taXNtYXRjaGVzIjp7fSwic3RhdHVzIjoiTk9UX1JFUVVJUkVEIiwidmFsaWRfb2JzZXJ2ZXJfY291bnRzIjp7fX19LCJpc3N1ZWRfYXQiOiIyMDI2LTA4LTI5VDIyOjU0OjI3LjgyMTU0NSswMDowMCIsImlzc3VlciI6eyJjbG91ZF9zZXJ2aWNlIjoiR29vZ2xlIENsb3VkIFJ1biIsImRlY2lzaW9uX3N0b3JlIjoiZmlyZXN0b3JlIiwia21zX2tleV92ZXJzaW9uIjoicHJvamVjdHMvcHJvamVjdC1iZDk4ZjY2Zi1jN2IwLTQ5YjEtYjczL2xvY2F0aW9ucy9nbG9iYWwva2V5UmluZ3MvaWxsdXNpb250aW9uLXByb29mLXJpbmcvY3J5cHRvS2V5cy9pbGx1c2lvbnRpb24tcHJvb2Ytc2lnbmluZy1rZXkvY3J5cHRvS2V5VmVyc2lvbnMvMSIsIm1vZGVsIjoiZ2VtaW5pLTMuNy1mbGFzaCIsInB1YmxpY19rZXlfc2hhMjU2IjoiZjZmMmZlNDFlZjg0YzE1OGY3OWQ5YmRiNWFiOWNiYWE3MWE4Y2I1ZjJhZWI4MDgyNTc4ZDE4MzZjNjIzZmJiOCIsInJlZ2lvbiI6Im1lLXdlc3QxIiwic3lzdGVtIjoiSWxsdXNpb250aW9uIn0sInByb29mX3NjaGVtYSI6ImlsbHVzaW9udGlvbi5leHRlcm5hbC1wcm9vZi52MSIsInByb29mX3R5cGUiOiJnb3Zlcm5lZF9kZWNpc2lvbiJ9",
+    "claim_id": "hackathon-live-acquisition-006",
+    "kms_key_version": "projects/project-bd98f66f-c7b0-49b1-b73/locations/global/keyRings/illusiontion-proof-ring/cryptoKeys/illusiontion-proof-signing-key/cryptoKeyVersions/1",
+    "proof_schema": "illusiontion.external-proof.v1",
+    "proof_sha256": "754ce3cb265a37d7fd21bf44ede2349125329b8ef2a5efcb552a2bc2e59ec406",
+    "public_key_sha256": "f6f2fe41ef84c158f79d9bdb5ab9cbaa71a8cb5f2aeb8082578d1836c623fbb8",
+    "signature_base64": "MEQCIGSMA45IlB2rH2sPcOtLM5PU9+8DeA0HUU8ik+InkZkDAiAZ/qqVatwuL2cVo+HH3l59Gb/2ZaklwAVBHXErE8BZnw==",
+    "signature_sha256": "5182369267babfb8e515a7f8ecef625944750f9a717e3b0df1a3f0a924625774"
+  },
+  "reviewer_receipts": [
+    {
+      "attempt_context_sha256": "",
+      "claim_sha256": "e4f90154e735feebccbcd1e1a943fcd54c5222688e0c277f0693e40e5fd90356",
+      "context_mode": "ISOLATED",
+      "detail": "",
+      "evidence_digests": {
+        "e1": "06fe3a76e4aa77843bb491bab954ecf963d74b8107da90c3b3d14edacc9e6580"
+      },
+      "execution_mode": "MODEL_LIVE",
+      "findings_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "invocation_id": "inv-3cd64fca28512d81d3b8e6f029b1dc19",
+      "invocation_sha256": "66038bccecfc7063f1a78ee66af7022ed7174f88f6ea33ba85f396e6b67d7f7f",
+      "model_id": "gemini-3.7-flash",
+      "model_provider": "google-vertex-generate-content",
+      "model_response_id": "BWOTasvxGJScmPUPx5zy6Qs",
+      "prompt_sha256": "917d4bd2e04754917f7899505e95c27e08a833b9d1c86250bced17b71cbce7e7",
+      "raw_output_sha256": "aca93d3b59ee94961b7842cfece3f9ba957c50cb823222927d9e86019d981dcc",
+      "raw_output_utf8_bytes": 184,
+      "response_schema_sha256": "3b5466b98573a738ed3f521f102bd4beff50aa7cb247e1d97ccfbac06b881b4e",
+      "reviewer": "decomposer",
+      "run_token": "run-b524c86e10636a10107e66c2635a8fb7",
+      "runtime_signature": "ad3619201476507a8787e464fe24d2ccff1c3594d72e3b9c5a9af5dc38f92e1a",
+      "semantic_artifacts_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "status": "SUCCESS",
+      "upstream_review_digests": []
+    },
+    {
+      "attempt_context_sha256": "",
+      "claim_sha256": "e4f90154e735feebccbcd1e1a943fcd54c5222688e0c277f0693e40e5fd90356",
+      "context_mode": "ISOLATED",
+      "detail": "",
+      "evidence_digests": {
+        "e1": "06fe3a76e4aa77843bb491bab954ecf963d74b8107da90c3b3d14edacc9e6580"
+      },
+      "execution_mode": "MODEL_LIVE",
+      "findings_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "invocation_id": "inv-8333572cd9358671607859146393075e",
+      "invocation_sha256": "67eccc0d502fb22a24c6735d67ce6afda7915c56110252114b5cf1e077106ab9",
+      "model_id": "gemini-3.7-flash",
+      "model_provider": "google-vertex-generate-content",
+      "model_response_id": "CWOTatS8L7-Fz_IPr6PrsAM",
+      "prompt_sha256": "8ee18a2b783d7f5f3a7c454d7734bba708dc2d12fbdc5f6ef4cc586417a86073",
+      "raw_output_sha256": "ba3ebc8a3e34b7737babb93f2b17cb25abf6f8fd739f98b62a474813c1290632",
+      "raw_output_utf8_bytes": 1414,
+      "response_schema_sha256": "3b5466b98573a738ed3f521f102bd4beff50aa7cb247e1d97ccfbac06b881b4e",
+      "reviewer": "evidence",
+      "run_token": "run-a4bafb39ba5ee6d4b97b4825d21cbb24",
+      "runtime_signature": "fc7282677c416ac6ebb7ef8756f043ea56335c7337c1b298d13c96b5b1db0f76",
+      "semantic_artifacts_sha256": "fae2481261a0f7da807957be9a472585195ff70cd54576bc4a87c64e7271cf49",
+      "status": "SUCCESS",
+      "upstream_review_digests": []
+    },
+    {
+      "attempt_context_sha256": "",
+      "claim_sha256": "e4f90154e735feebccbcd1e1a943fcd54c5222688e0c277f0693e40e5fd90356",
+      "context_mode": "ISOLATED",
+      "detail": "",
+      "evidence_digests": {
+        "e1": "06fe3a76e4aa77843bb491bab954ecf963d74b8107da90c3b3d14edacc9e6580"
+      },
+      "execution_mode": "MODEL_LIVE",
+      "findings_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "invocation_id": "inv-876e6d2aa68eb6b49de9d34f6cf7d27f",
+      "invocation_sha256": "10ee18d53e01a8d09c731485d4e488795ff4e529078e542f9239811a6f7b5e7a",
+      "model_id": "gemini-3.7-flash",
+      "model_provider": "google-vertex-generate-content",
+      "model_response_id": "EWOTatuuELShmPUP26Xc8QY",
+      "prompt_sha256": "36bb9f36feffe206cadf2bc77ab7ca0508f83cb38dce5c9fd905b4e3b3ee7d4f",
+      "raw_output_sha256": "dc46f82a897b75663af99cba4e9f32b23aea0f4e6cf3aa1330cfda2063838c58",
+      "raw_output_utf8_bytes": 2429,
+      "response_schema_sha256": "3b5466b98573a738ed3f521f102bd4beff50aa7cb247e1d97ccfbac06b881b4e",
+      "reviewer": "challenger",
+      "run_token": "run-8eecbbe0b43b3c19c8cc5e0fd1c0aea7",
+      "runtime_signature": "e5d8dc756ac3387636319fd8db9eb66f8c841e3697c505b9cc3ad978e05b7891",
+      "semantic_artifacts_sha256": "643f2c2f3dffbe07af5d77f57e4e7674635903b4ee979bc822f7408c1ca6c086",
+      "status": "SUCCESS",
+      "upstream_review_digests": []
+    },
+    {
+      "attempt_context_sha256": "",
+      "claim_sha256": "e4f90154e735feebccbcd1e1a943fcd54c5222688e0c277f0693e40e5fd90356",
+      "context_mode": "ISOLATED",
+      "detail": "",
+      "evidence_digests": {
+        "e1": "06fe3a76e4aa77843bb491bab954ecf963d74b8107da90c3b3d14edacc9e6580"
+      },
+      "execution_mode": "MODEL_LIVE",
+      "findings_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "invocation_id": "inv-402d8dd27d8770f34f09926f1e6a8baf",
+      "invocation_sha256": "d5e60199825d71ccd361a22e76e82a577f5de205da150b7e69f4609f08ceeb1f",
+      "model_id": "gemini-3.7-flash",
+      "model_provider": "google-vertex-generate-content",
+      "model_response_id": "GWOTavPoLLCemPUPt6f8aA",
+      "prompt_sha256": "b94a416b75dd6b7dfbaa09d83d06e3f4e682f40a206a65b816c8ec5b747c7040",
+      "raw_output_sha256": "bf14d5a0d53921401d5f498fbcc8b6c99a12de0d2055b60c1d3a4da1599f71c0",
+      "raw_output_utf8_bytes": 345,
+      "response_schema_sha256": "3b5466b98573a738ed3f521f102bd4beff50aa7cb247e1d97ccfbac06b881b4e",
+      "reviewer": "scope",
+      "run_token": "run-b21e915fdcdb17d4f877a893cf652498",
+      "runtime_signature": "48a0232d4def0a331159df6287463b460653e5d6a9940837eb2396c1fe94d159",
+      "semantic_artifacts_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "status": "SUCCESS",
+      "upstream_review_digests": []
+    },
+    {
+      "attempt_context_sha256": "",
+      "claim_sha256": "e4f90154e735feebccbcd1e1a943fcd54c5222688e0c277f0693e40e5fd90356",
+      "context_mode": "ISOLATED",
+      "detail": "",
+      "evidence_digests": {
+        "e1": "06fe3a76e4aa77843bb491bab954ecf963d74b8107da90c3b3d14edacc9e6580"
+      },
+      "execution_mode": "MODEL_LIVE",
+      "findings_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "invocation_id": "inv-374cb2b593bb1fe1fbdedd9baa0995ff",
+      "invocation_sha256": "1c50b6b86c98aba9ba9efa77b8fde38d71bc5b966cbaae79eeb450c5017e81d8",
+      "model_id": "gemini-3.7-flash",
+      "model_provider": "google-vertex-generate-content",
+      "model_response_id": "H2OTapO4I7WxmPUPpcegiQs",
+      "prompt_sha256": "36f3e5eac91dcc79b9bebea13c1ab547262f13afb8aa43f73847161a59a450a3",
+      "raw_output_sha256": "797b6bab456e71f33a4a03220284d4ec9bb210250019ed3973c5c75bc58c3605",
+      "raw_output_utf8_bytes": 204,
+      "response_schema_sha256": "3b5466b98573a738ed3f521f102bd4beff50aa7cb247e1d97ccfbac06b881b4e",
+      "reviewer": "security",
+      "run_token": "run-06fd885463fa0e970a82b00afc7ccc60",
+      "runtime_signature": "1e3a302c57290e911f8217e655f694cd2d5382f755d435295785bc8e0138da08",
+      "semantic_artifacts_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "status": "SUCCESS",
+      "upstream_review_digests": []
+    }
+  ],
+  "reviewer_trace_count": 5
+}

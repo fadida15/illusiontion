@@ -1,0 +1,14 @@
+{
+  "claim_id": "hackathon-live-acquisition-006",
+  "reasons": [
+    "SOURCE_DIVERSITY_GAP: a1 requires 2 declared source group(s) and 2 distinct source locator(s); observed groups=1, locators=1.",
+    "EVIDENCE_ORIGIN_DIVERSITY_GAP: a1 requires 2 runtime-attested source origin(s); observed=1.",
+    "SOURCE_DIVERSITY_GAP: a2 requires 2 declared source group(s) and 2 distinct source locator(s); observed groups=1, locators=1.",
+    "EVIDENCE_ORIGIN_DIVERSITY_GAP: a2 requires 2 runtime-attested source origin(s); observed=1.",
+    "EVIDENCE_ORIGIN_DIVERSITY_GAP: 2",
+    "SOURCE_DIVERSITY_GAP: 2"
+  ],
+  "selection_basis": "Live trusted-acquisition HOLD: evidence acquisition succeeded, reviewers executed, but source/origin diversity remained insufficient.",
+  "source_file": "certification/conservative_hold/hold-source-record.json",
+  "verdict": "HOLD"
+}

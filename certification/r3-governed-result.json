@@ -1,0 +1,48 @@
+{
+  "certification": "ILLUSIONTION_FINAL_FORTIFIED_PASS",
+  "claim_id": "hackathon-final-fortified-007",
+  "cloud_run_revision": "illusiontion-00007-2w2",
+  "created_at_utc": "2026-08-29T23:41:41.707850+00:00",
+  "files": {
+    "acquisition-plan.json": {
+      "bytes": 708,
+      "sha256": "5650bcd90dd7fc6a45270200de92bd81a15aa43a66d6cac2204a2f286560d903",
+      "status": "PRESENT"
+    },
+    "claim.json": {
+      "bytes": 1835,
+      "sha256": "429b7d54c7eb53d6f474d3107969be092353a1013b41c2612bc4ac43d934be91",
+      "status": "PRESENT"
+    },
+    "r3-governed-result.json": {
+      "bytes": 33223,
+      "sha256": "e22b00058cd20c5ea2183da88cc0124ee4dff072594f53426befbc6ce9d81a1c",
+      "status": "PRESENT"
+    },
+    "r3-proof.json": {
+      "bytes": 7798,
+      "sha256": "0116728fd8e2f08b21698c4dcebb40b846c009fe1d7ab81d052323c48cf4fefa",
+      "status": "PRESENT"
+    },
+    "r3-proof.sig": {
+      "bytes": 71,
+      "sha256": "6466799f4eda7ba5e4e75cd5c163e6ba2614034086dc76e2f106991a0b164dcf",
+      "status": "PRESENT"
+    },
+    "r3-run-request.json": {
+      "bytes": 3359,
+      "sha256": "0b73c96056a2bd81da208beaf1fd9633af0a1ef9562b158496454d43d41bb7a0",
+      "status": "PRESENT"
+    },
+    "r3-run-response.json": {
+      "bytes": 47336,
+      "sha256": "b9c984aca84afa29465e93f6c6c14aff0d8254bc7a6d35a895da2171e73542fc",
+      "status": "PRESENT"
+    },
+    "remote-message.txt": {
+      "bytes": 3003,
+      "sha256": "3c4c5b3a7247eb124fdc3fd809fb18736eaa4cc33b237f37ba96797d016611dc",
+      "status": "PRESENT"
+    }
+  }
+}

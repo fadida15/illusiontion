@@ -1,0 +1,521 @@
+{
+  "decision": {
+    "allowed_output": "Claim may be used only within declared scope: Only the live-acquired NIST digital-signature, public-key, private-key material and RFC 7515 security material. The Cloud Run documentation is deliberately present in the frozen evidence universe as irrelevant evidence and is not selected for the claim.",
+    "atom_assurance": [
+      {
+        "atom_id": "a1",
+        "captured_origins": [
+          "https://csrc.nist.gov",
+          "https://www.rfc-editor.org"
+        ],
+        "observed_captured_origins": 2,
+        "observed_source_groups": 2,
+        "observed_sources": 2,
+        "required_captured_origins": 2,
+        "required_source_groups": 2,
+        "source_groups": [
+          "ietf-jws-standard",
+          "nist-digital-signature"
+        ],
+        "sources": [
+          "https://csrc.nist.gov/glossary/term/digital_signature",
+          "https://www.rfc-editor.org/rfc/rfc7515.html"
+        ],
+        "status": "PASS"
+      },
+      {
+        "atom_id": "a2",
+        "captured_origins": [
+          "https://csrc.nist.gov",
+          "https://www.rfc-editor.org"
+        ],
+        "observed_captured_origins": 2,
+        "observed_source_groups": 2,
+        "observed_sources": 2,
+        "required_captured_origins": 2,
+        "required_source_groups": 2,
+        "source_groups": [
+          "ietf-jws-standard",
+          "nist-public-key"
+        ],
+        "sources": [
+          "https://csrc.nist.gov/glossary/term/public_key",
+          "https://www.rfc-editor.org/rfc/rfc7515.html"
+        ],
+        "status": "PASS"
+      },
+      {
+        "atom_id": "a3",
+        "captured_origins": [
+          "https://csrc.nist.gov",
+          "https://www.rfc-editor.org"
+        ],
+        "observed_captured_origins": 2,
+        "observed_source_groups": 2,
+        "observed_sources": 2,
+        "required_captured_origins": 2,
+        "required_source_groups": 2,
+        "source_groups": [
+          "ietf-jws-standard",
+          "nist-private-key"
+        ],
+        "sources": [
+          "https://csrc.nist.gov/glossary/term/private_key",
+          "https://www.rfc-editor.org/rfc/rfc7515.html"
+        ],
+        "status": "PASS"
+      },
+      {
+        "atom_id": "a4",
+        "captured_origins": [
+          "https://csrc.nist.gov",
+          "https://www.rfc-editor.org"
+        ],
+        "observed_captured_origins": 2,
+        "observed_source_groups": 2,
+        "observed_sources": 2,
+        "required_captured_origins": 2,
+        "required_source_groups": 2,
+        "source_groups": [
+          "ietf-jws-standard",
+          "nist-digital-signature"
+        ],
+        "sources": [
+          "https://csrc.nist.gov/glossary/term/digital_signature",
+          "https://www.rfc-editor.org/rfc/rfc7515.html"
+        ],
+        "status": "PASS"
+      }
+    ],
+    "calibration_assurance": {
+      "automatic_relaxation_allowed": false,
+      "blocker_counts": {},
+      "claim_conflicts": [],
+      "evidence_debt": [],
+      "hard_risks": [],
+      "recovery_actions": [],
+      "semantic_debt": [],
+      "status": "CLEAR_PASS"
+    },
+    "claim_id": "hackathon-final-fortified-007",
+    "decision_sha256": "9bb8d5b7fbe7bd539c82d94e0b32ce15fb4fed1c1fb9811bfc0b129c5b40e900",
+    "declared_scope": "Only the live-acquired NIST digital-signature, public-key, private-key material and RFC 7515 security material. The Cloud Run documentation is deliberately present in the frozen evidence universe as irrelevant evidence and is not selected for the claim.",
+    "evidence_admission_status": {
+      "e1": "CAPTURED",
+      "e2": "CAPTURED",
+      "e3": "CAPTURED",
+      "e4": "CAPTURED",
+      "e5": "CAPTURED"
+    },
+    "evidence_digests": {
+      "e1": "de3abadfd949473021f08e5e1ca6995e18beda1c78498efcb15abe1ea6075489",
+      "e2": "6b6ab16eac3beed4bd071baa0e54eaec3640e8eefd026e1d3dd32cdc1fd4f7fa",
+      "e3": "a57bdf1bd7168e180163f414698383178669f50292683f0f36051d9edce1b901",
+      "e4": "e08dbe1dbf64138029a878b10d6afbf87407c82d066b18d9cab51accfdb8379f",
+      "e5": "412d799dc0426ea7df540c51df8c2112f76bccc11bb9ad22d790beb193936b60"
+    },
+    "evidence_transition": {
+      "added_ids": [],
+      "material_omission_ids": [],
+      "mutated_ids": [],
+      "omitted_ids": [
+        "e5"
+      ],
+      "reviewer_ids": [
+        "e1",
+        "e2",
+        "e3",
+        "e4",
+        "e5"
+      ],
+      "status": "OBSERVED",
+      "transition_ids": [
+        "e1",
+        "e2",
+        "e3",
+        "e4"
+      ],
+      "universe_ids": [
+        "e1",
+        "e2",
+        "e3",
+        "e4",
+        "e5"
+      ]
+    },
+    "external_witness_assurance": {
+      "check_count": 0,
+      "counterexample_atom_ids": [],
+      "covered_atom_ids": [],
+      "nonindependent_check_ids": [],
+      "required_atom_ids": [],
+      "status": "NOT_REQUIRED",
+      "unresolved_atom_ids": [],
+      "verifier_id": "",
+      "verifier_public_key": ""
+    },
+    "findings": [],
+    "input_sha256": "b2ffca1aad8f0b63c0300263251e69a14eb06f54dc888bb0c598bd0ac20203d1",
+    "reasons": [
+      "All required runtime-authenticated reviewers succeeded independently; the exact claim/evidence/findings/prompts remained bound; every atomic claim met the declared evidence-source policy; and no blocking finding was recorded."
+    ],
+    "reviewer_execution": {
+      "challenger": "MODEL_LIVE",
+      "counterexample": "MODEL_LIVE",
+      "decomposer": "MODEL_LIVE",
+      "entailment": "MODEL_LIVE",
+      "evidence": "MODEL_LIVE",
+      "scope": "MODEL_LIVE",
+      "security": "MODEL_LIVE"
+    },
+    "reviewer_status": {
+      "challenger": "SUCCESS",
+      "counterexample": "SUCCESS",
+      "decomposer": "SUCCESS",
+      "entailment": "SUCCESS",
+      "evidence": "SUCCESS",
+      "scope": "SUCCESS",
+      "security": "SUCCESS"
+    },
+    "semantic_assurance": {
+      "completed_reviewers": [
+        "counterexample",
+        "entailment"
+      ],
+      "distinct_model_ids": 1,
+      "model_ids": [
+        "gemini-3.7-flash"
+      ],
+      "required_reviewers": [
+        "counterexample",
+        "entailment"
+      ],
+      "status": "PASS",
+      "strategy_count": 2
+    },
+    "semantic_obligation_assurance": {
+      "atom_ids": [],
+      "failed_obligations": [],
+      "frame_count": 0,
+      "missing_obligations": [],
+      "obligation_count": 0,
+      "representation_mismatch_atoms": [],
+      "required_frame_reviewers": [],
+      "status": "NOT_REQUIRED"
+    },
+    "usefulness_assurance": {
+      "atom_blockers": {},
+      "global_blockers": [],
+      "held_atom_ids": [],
+      "preservation_rate": 1.0,
+      "preserved_atom_count": 4,
+      "promotable_atom_ids": [
+        "a1",
+        "a2",
+        "a3",
+        "a4"
+      ],
+      "promotable_statements": {
+        "a1": "In a public-key digital-signature setting, signing uses a private key and verification uses the corresponding public-key mechanism.",
+        "a2": "The appropriate public key is part of verifying a public-key digital signature.",
+        "a3": "The signing private key is intended to remain protected, and compromise of that key undermines signer assurance.",
+        "a4": "Digital signatures can provide integrity and authenticity assurance, while the origin of a public verification key must still be trusted or authenticated separately."
+      },
+      "recovery_requirements": [],
+      "status": "FULL_PASS",
+      "total_atom_count": 4
+    },
+    "verdict": "PASS",
+    "witness_ancestry_assurance": {
+      "ancestry_manifest_count": 0,
+      "errors": [],
+      "overlap_fingerprints": {},
+      "selected_valid_ancestry_count": 0,
+      "status": "NOT_REQUIRED",
+      "universe_group_root_fingerprints": {},
+      "valid_ancestry_manifest_count": 0
+    },
+    "witness_provenance_assurance": {
+      "errors": [],
+      "measurement_receipt_count": 0,
+      "selected_dependency_groups": {},
+      "selected_measurement_authorities": {},
+      "status": "NOT_REQUIRED",
+      "universe_dependency_groups": {},
+      "universe_measurement_authorities": {},
+      "valid_measurement_receipt_count": 0
+    },
+    "witness_quorum_assurance": {
+      "authority_ids": [],
+      "authority_public_keys": [],
+      "counterexample_check_ids": [],
+      "covered_check_ids": [],
+      "disagreement_check_ids": [],
+      "invalid_authority_ids": [],
+      "required_authority_quorum": 0,
+      "selected_check_ids": [],
+      "selection_verified": false,
+      "status": "NOT_REQUIRED",
+      "unresolved_check_ids": [],
+      "valid_authority_count": 0
+    },
+    "witness_registry_ancestry_assurance": {
+      "errors": [],
+      "invalid_registry_ancestry_manifests": [],
+      "missing_registry_ancestry_bindings": [],
+      "registry_ancestry_manifest_count": 0,
+      "registry_ancestry_overlap_fingerprints": {},
+      "registry_ancestry_root_fingerprints": {},
+      "status": "NOT_REQUIRED",
+      "valid_registry_ancestry_manifest_count": 0
+    },
+    "witness_registry_assurance": {
+      "errors": [],
+      "invalid_attestations": [],
+      "negative_attestations": [],
+      "registry_attestation_count": 0,
+      "registry_disclosure_mismatches": {},
+      "registry_source_groups": {},
+      "status": "NOT_REQUIRED",
+      "valid_registry_authority_counts": {}
+    },
+    "witness_registry_observation_assurance": {
+      "errors": [],
+      "invalid_observations": [],
+      "negative_observations": [],
+      "observation_count": 0,
+      "observer_source_groups": {},
+      "registry_observation_disclosure_mismatches": {},
+      "status": "NOT_REQUIRED",
+      "valid_observer_counts": {}
+    }
+  },
+  "decision_store": {
+    "backend": "firestore",
+    "collection": "illusiontion_decisions",
+    "record_id": "hackathon-final-fortified-007"
+  },
+  "external_proof": {
+    "canonical_proof_base64": "eyJjbGFpbV9pZCI6ImhhY2thdGhvbi1maW5hbC1mb3J0aWZpZWQtMDA3IiwiZGVjaXNpb24iOnsiYWxsb3dlZF9vdXRwdXQiOiJDbGFpbSBtYXkgYmUgdXNlZCBvbmx5IHdpdGhpbiBkZWNsYXJlZCBzY29wZTogT25seSB0aGUgbGl2ZS1hY3F1aXJlZCBOSVNUIGRpZ2l0YWwtc2lnbmF0dXJlLCBwdWJsaWMta2V5LCBwcml2YXRlLWtleSBtYXRlcmlhbCBhbmQgUkZDIDc1MTUgc2VjdXJpdHkgbWF0ZXJpYWwuIFRoZSBDbG91ZCBSdW4gZG9jdW1lbnRhdGlvbiBpcyBkZWxpYmVyYXRlbHkgcHJlc2VudCBpbiB0aGUgZnJvemVuIGV2aWRlbmNlIHVuaXZlcnNlIGFzIGlycmVsZXZhbnQgZXZpZGVuY2UgYW5kIGlzIG5vdCBzZWxlY3RlZCBmb3IgdGhlIGNsYWltLiIsImF0b21fYXNzdXJhbmNlIjpbeyJhdG9tX2lkIjoiYTEiLCJjYXB0dXJlZF9vcmlnaW5zIjpbImh0dHBzOi8vY3NyYy5uaXN0LmdvdiIsImh0dHBzOi8vd3d3LnJmYy1lZGl0b3Iub3JnIl0sIm9ic2VydmVkX2NhcHR1cmVkX29yaWdpbnMiOjIsIm9ic2VydmVkX3NvdXJjZV9ncm91cHMiOjIsIm9ic2VydmVkX3NvdXJjZXMiOjIsInJlcXVpcmVkX2NhcHR1cmVkX29yaWdpbnMiOjIsInJlcXVpcmVkX3NvdXJjZV9ncm91cHMiOjIsInNvdXJjZV9ncm91cHMiOlsiaWV0Zi1qd3Mtc3RhbmRhcmQiLCJuaXN0LWRpZ2l0YWwtc2lnbmF0dXJlIl0sInNvdXJjZXMiOlsiaHR0cHM6Ly9jc3JjLm5pc3QuZ292L2dsb3NzYXJ5L3Rlcm0vZGlnaXRhbF9zaWduYXR1cmUiLCJodHRwczovL3d3dy5yZmMtZWRpdG9yLm9yZy9yZmMvcmZjNzUxNS5odG1sIl0sInN0YXR1cyI6IlBBU1MifSx7ImF0b21faWQiOiJhMiIsImNhcHR1cmVkX29yaWdpbnMiOlsiaHR0cHM6Ly9jc3JjLm5pc3QuZ292IiwiaHR0cHM6Ly93d3cucmZjLWVkaXRvci5vcmciXSwib2JzZXJ2ZWRfY2FwdHVyZWRfb3JpZ2lucyI6Miwib2JzZXJ2ZWRfc291cmNlX2dyb3VwcyI6Miwib2JzZXJ2ZWRfc291cmNlcyI6MiwicmVxdWlyZWRfY2FwdHVyZWRfb3JpZ2lucyI6MiwicmVxdWlyZWRfc291cmNlX2dyb3VwcyI6Miwic291cmNlX2dyb3VwcyI6WyJpZXRmLWp3cy1zdGFuZGFyZCIsIm5pc3QtcHVibGljLWtleSJdLCJzb3VyY2VzIjpbImh0dHBzOi8vY3NyYy5uaXN0Lmdvdi9nbG9zc2FyeS90ZXJtL3B1YmxpY19rZXkiLCJodHRwczovL3d3dy5yZmMtZWRpdG9yLm9yZy9yZmMvcmZjNzUxNS5odG1sIl0sInN0YXR1cyI6IlBBU1MifSx7ImF0b21faWQiOiJhMyIsImNhcHR1cmVkX29yaWdpbnMiOlsiaHR0cHM6Ly9jc3JjLm5pc3QuZ292IiwiaHR0cHM6Ly93d3cucmZjLWVkaXRvci5vcmciXSwib2JzZXJ2ZWRfY2FwdHVyZWRfb3JpZ2lucyI6Miwib2JzZXJ2ZWRfc291cmNlX2dyb3VwcyI6Miwib2JzZXJ2ZWRfc291cmNlcyI6MiwicmVxdWlyZWRfY2FwdHVyZWRfb3JpZ2lucyI6MiwicmVxdWlyZWRfc291cmNlX2dyb3VwcyI6Miwic291cmNlX2dyb3VwcyI6WyJpZXRmLWp3cy1zdGFuZGFyZCIsIm5pc3QtcHJpdmF0ZS1rZXkiXSwic291cmNlcyI6WyJodHRwczovL2NzcmMubmlzdC5nb3YvZ2xvc3NhcnkvdGVybS9wcml2YXRlX2tleSIsImh0dHBzOi8vd3d3LnJmYy1lZGl0b3Iub3JnL3JmYy9yZmM3NTE1Lmh0bWwiXSwic3RhdHVzIjoiUEFTUyJ9LHsiYXRvbV9pZCI6ImE0IiwiY2FwdHVyZWRfb3JpZ2lucyI6WyJodHRwczovL2NzcmMubmlzdC5nb3YiLCJodHRwczovL3d3dy5yZmMtZWRpdG9yLm9yZyJdLCJvYnNlcnZlZF9jYXB0dXJlZF9vcmlnaW5zIjoyLCJvYnNlcnZlZF9zb3VyY2VfZ3JvdXBzIjoyLCJvYnNlcnZlZF9zb3VyY2VzIjoyLCJyZXF1aXJlZF9jYXB0dXJlZF9vcmlnaW5zIjoyLCJyZXF1aXJlZF9zb3VyY2VfZ3JvdXBzIjoyLCJzb3VyY2VfZ3JvdXBzIjpbImlldGYtandzLXN0YW5kYXJkIiwibmlzdC1kaWdpdGFsLXNpZ25hdHVyZSJdLCJzb3VyY2VzIjpbImh0dHBzOi8vY3NyYy5uaXN0Lmdvdi9nbG9zc2FyeS90ZXJtL2RpZ2l0YWxfc2lnbmF0dXJlIiwiaHR0cHM6Ly93d3cucmZjLWVkaXRvci5vcmcvcmZjL3JmYzc1MTUuaHRtbCJdLCJzdGF0dXMiOiJQQVNTIn1dLCJjYWxpYnJhdGlvbl9hc3N1cmFuY2UiOnsiYXV0b21hdGljX3JlbGF4YXRpb25fYWxsb3dlZCI6ZmFsc2UsImJsb2NrZXJfY291bnRzIjp7fSwiY2xhaW1fY29uZmxpY3RzIjpbXSwiZXZpZGVuY2VfZGVidCI6W10sImhhcmRfcmlza3MiOltdLCJyZWNvdmVyeV9hY3Rpb25zIjpbXSwic2VtYW50aWNfZGVidCI6W10sInN0YXR1cyI6IkNMRUFSX1BBU1MifSwiY2xhaW1faWQiOiJoYWNrYXRob24tZmluYWwtZm9ydGlmaWVkLTAwNyIsImRlY2lzaW9uX3NoYTI1NiI6IjliYjhkNWI3ZmJlN2JkNTM5YzgyZDk0ZTBiMzJjZTE1ZmI0ZmVkMWMxZmI5ODExYmZjMGIxMjljNWI0MGU5MDAiLCJkZWNsYXJlZF9zY29wZSI6Ik9ubHkgdGhlIGxpdmUtYWNxdWlyZWQgTklTVCBkaWdpdGFsLXNpZ25hdHVyZSwgcHVibGljLWtleSwgcHJpdmF0ZS1rZXkgbWF0ZXJpYWwgYW5kIFJGQyA3NTE1IHNlY3VyaXR5IG1hdGVyaWFsLiBUaGUgQ2xvdWQgUnVuIGRvY3VtZW50YXRpb24gaXMgZGVsaWJlcmF0ZWx5IHByZXNlbnQgaW4gdGhlIGZyb3plbiBldmlkZW5jZSB1bml2ZXJzZSBhcyBpcnJlbGV2YW50IGV2aWRlbmNlIGFuZCBpcyBub3Qgc2VsZWN0ZWQgZm9yIHRoZSBjbGFpbS4iLCJldmlkZW5jZV9hZG1pc3Npb25fc3RhdHVzIjp7ImUxIjoiQ0FQVFVSRUQiLCJlMiI6IkNBUFRVUkVEIiwiZTMiOiJDQVBUVVJFRCIsImU0IjoiQ0FQVFVSRUQiLCJlNSI6IkNBUFRVUkVEIn0sImV2aWRlbmNlX2RpZ2VzdHMiOnsiZTEiOiJkZTNhYmFkZmQ5NDk0NzMwMjFmMDhlNWUxY2E2OTk1ZTE4YmVkYTFjNzg0OThlZmNiMTVhYmUxZWE2MDc1NDg5IiwiZTIiOiI2YjZhYjE2ZWFjM2JlZWQ0YmQwNzFiYWEwZTU0ZWFlYzM2NDBlOGVlZmQwMjZlMWQzZGQzMmNkYzFmZDRmN2ZhIiwiZTMiOiJhNTdiZGYxYmQ3MTY4ZTE4MDE2M2Y0MTQ2OTgzODMxNzg2NjlmNTAyOTI2ODNmMGYzNjA1MWQ5ZWRjZTFiOTAxIiwiZTQiOiJlMDhkYmUxZGJmNjQxMzgwMjlhODc4YjEwZDZhZmJmODc0MDdjODJkMDY2YjE4ZDljYWI1MWFjY2ZkYjgzNzlmIiwiZTUiOiI0MTJkNzk5ZGMwNDI2ZWE3ZGY1NDBjNTFkZjhjMjExMmY3NmJjY2MxMWJiOWFkMjJkNzkwYmViMTkzOTM2YjYwIn0sImV2aWRlbmNlX3RyYW5zaXRpb24iOnsiYWRkZWRfaWRzIjpbXSwibWF0ZXJpYWxfb21pc3Npb25faWRzIjpbXSwibXV0YXRlZF9pZHMiOltdLCJvbWl0dGVkX2lkcyI6WyJlNSJdLCJyZXZpZXdlcl9pZHMiOlsiZTEiLCJlMiIsImUzIiwiZTQiLCJlNSJdLCJzdGF0dXMiOiJPQlNFUlZFRCIsInRyYW5zaXRpb25faWRzIjpbImUxIiwiZTIiLCJlMyIsImU0Il0sInVuaXZlcnNlX2lkcyI6WyJlMSIsImUyIiwiZTMiLCJlNCIsImU1Il19LCJleHRlcm5hbF93aXRuZXNzX2Fzc3VyYW5jZSI6eyJjaGVja19jb3VudCI6MCwiY291bnRlcmV4YW1wbGVfYXRvbV9pZHMiOltdLCJjb3ZlcmVkX2F0b21faWRzIjpbXSwibm9uaW5kZXBlbmRlbnRfY2hlY2tfaWRzIjpbXSwicmVxdWlyZWRfYXRvbV9pZHMiOltdLCJzdGF0dXMiOiJOT1RfUkVRVUlSRUQiLCJ1bnJlc29sdmVkX2F0b21faWRzIjpbXSwidmVyaWZpZXJfaWQiOiIiLCJ2ZXJpZmllcl9wdWJsaWNfa2V5IjoiIn0sImZpbmRpbmdzIjpbXSwiaW5wdXRfc2hhMjU2IjoiYjJmZmNhMWFhZDhmMGI2M2MwMzAwMjYzMjUxZTY5YTE0ZWIwNmY1NGRjODg4YmIwYzU5OGJkMGFjMjAyMDNkMSIsInJlYXNvbnMiOlsiQWxsIHJlcXVpcmVkIHJ1bnRpbWUtYXV0aGVudGljYXRlZCByZXZpZXdlcnMgc3VjY2VlZGVkIGluZGVwZW5kZW50bHk7IHRoZSBleGFjdCBjbGFpbS9ldmlkZW5jZS9maW5kaW5ncy9wcm9tcHRzIHJlbWFpbmVkIGJvdW5kOyBldmVyeSBhdG9taWMgY2xhaW0gbWV0IHRoZSBkZWNsYXJlZCBldmlkZW5jZS1zb3VyY2UgcG9saWN5OyBhbmQgbm8gYmxvY2tpbmcgZmluZGluZyB3YXMgcmVjb3JkZWQuIl0sInJldmlld2VyX2V4ZWN1dGlvbiI6eyJjaGFsbGVuZ2VyIjoiTU9ERUxfTElWRSIsImNvdW50ZXJleGFtcGxlIjoiTU9ERUxfTElWRSIsImRlY29tcG9zZXIiOiJNT0RFTF9MSVZFIiwiZW50YWlsbWVudCI6Ik1PREVMX0xJVkUiLCJldmlkZW5jZSI6Ik1PREVMX0xJVkUiLCJzY29wZSI6Ik1PREVMX0xJVkUiLCJzZWN1cml0eSI6Ik1PREVMX0xJVkUifSwicmV2aWV3ZXJfc3RhdHVzIjp7ImNoYWxsZW5nZXIiOiJTVUNDRVNTIiwiY291bnRlcmV4YW1wbGUiOiJTVUNDRVNTIiwiZGVjb21wb3NlciI6IlNVQ0NFU1MiLCJlbnRhaWxtZW50IjoiU1VDQ0VTUyIsImV2aWRlbmNlIjoiU1VDQ0VTUyIsInNjb3BlIjoiU1VDQ0VTUyIsInNlY3VyaXR5IjoiU1VDQ0VTUyJ9LCJzZW1hbnRpY19hc3N1cmFuY2UiOnsiY29tcGxldGVkX3Jldmlld2VycyI6WyJjb3VudGVyZXhhbXBsZSIsImVudGFpbG1lbnQiXSwiZGlzdGluY3RfbW9kZWxfaWRzIjoxLCJtb2RlbF9pZHMiOlsiZ2VtaW5pLTMuNy1mbGFzaCJdLCJyZXF1aXJlZF9yZXZpZXdlcnMiOlsiY291bnRlcmV4YW1wbGUiLCJlbnRhaWxtZW50Il0sInN0YXR1cyI6IlBBU1MiLCJzdHJhdGVneV9jb3VudCI6Mn0sInNlbWFudGljX29ibGlnYXRpb25fYXNzdXJhbmNlIjp7ImF0b21faWRzIjpbXSwiZmFpbGVkX29ibGlnYXRpb25zIjpbXSwiZnJhbWVfY291bnQiOjAsIm1pc3Npbmdfb2JsaWdhdGlvbnMiOltdLCJvYmxpZ2F0aW9uX2NvdW50IjowLCJyZXByZXNlbnRhdGlvbl9taXNtYXRjaF9hdG9tcyI6W10sInJlcXVpcmVkX2ZyYW1lX3Jldmlld2VycyI6W10sInN0YXR1cyI6Ik5PVF9SRVFVSVJFRCJ9LCJ1c2VmdWxuZXNzX2Fzc3VyYW5jZSI6eyJhdG9tX2Jsb2NrZXJzIjp7fSwiZ2xvYmFsX2Jsb2NrZXJzIjpbXSwiaGVsZF9hdG9tX2lkcyI6W10sInByZXNlcnZhdGlvbl9yYXRlIjoxLjAsInByZXNlcnZlZF9hdG9tX2NvdW50Ijo0LCJwcm9tb3RhYmxlX2F0b21faWRzIjpbImExIiwiYTIiLCJhMyIsImE0Il0sInByb21vdGFibGVfc3RhdGVtZW50cyI6eyJhMSI6IkluIGEgcHVibGljLWtleSBkaWdpdGFsLXNpZ25hdHVyZSBzZXR0aW5nLCBzaWduaW5nIHVzZXMgYSBwcml2YXRlIGtleSBhbmQgdmVyaWZpY2F0aW9uIHVzZXMgdGhlIGNvcnJlc3BvbmRpbmcgcHVibGljLWtleSBtZWNoYW5pc20uIiwiYTIiOiJUaGUgYXBwcm9wcmlhdGUgcHVibGljIGtleSBpcyBwYXJ0IG9mIHZlcmlmeWluZyBhIHB1YmxpYy1rZXkgZGlnaXRhbCBzaWduYXR1cmUuIiwiYTMiOiJUaGUgc2lnbmluZyBwcml2YXRlIGtleSBpcyBpbnRlbmRlZCB0byByZW1haW4gcHJvdGVjdGVkLCBhbmQgY29tcHJvbWlzZSBvZiB0aGF0IGtleSB1bmRlcm1pbmVzIHNpZ25lciBhc3N1cmFuY2UuIiwiYTQiOiJEaWdpdGFsIHNpZ25hdHVyZXMgY2FuIHByb3ZpZGUgaW50ZWdyaXR5IGFuZCBhdXRoZW50aWNpdHkgYXNzdXJhbmNlLCB3aGlsZSB0aGUgb3JpZ2luIG9mIGEgcHVibGljIHZlcmlmaWNhdGlvbiBrZXkgbXVzdCBzdGlsbCBiZSB0cnVzdGVkIG9yIGF1dGhlbnRpY2F0ZWQgc2VwYXJhdGVseS4ifSwicmVjb3ZlcnlfcmVxdWlyZW1lbnRzIjpbXSwic3RhdHVzIjoiRlVMTF9QQVNTIiwidG90YWxfYXRvbV9jb3VudCI6NH0sInZlcmRpY3QiOiJQQVNTIiwid2l0bmVzc19hbmNlc3RyeV9hc3N1cmFuY2UiOnsiYW5jZXN0cnlfbWFuaWZlc3RfY291bnQiOjAsImVycm9ycyI6W10sIm92ZXJsYXBfZmluZ2VycHJpbnRzIjp7fSwic2VsZWN0ZWRfdmFsaWRfYW5jZXN0cnlfY291bnQiOjAsInN0YXR1cyI6Ik5PVF9SRVFVSVJFRCIsInVuaXZlcnNlX2dyb3VwX3Jvb3RfZmluZ2VycHJpbnRzIjp7fSwidmFsaWRfYW5jZXN0cnlfbWFuaWZlc3RfY291bnQiOjB9LCJ3aXRuZXNzX3Byb3ZlbmFuY2VfYXNzdXJhbmNlIjp7ImVycm9ycyI6W10sIm1lYXN1cmVtZW50X3JlY2VpcHRfY291bnQiOjAsInNlbGVjdGVkX2RlcGVuZGVuY3lfZ3JvdXBzIjp7fSwic2VsZWN0ZWRfbWVhc3VyZW1lbnRfYXV0aG9yaXRpZXMiOnt9LCJzdGF0dXMiOiJOT1RfUkVRVUlSRUQiLCJ1bml2ZXJzZV9kZXBlbmRlbmN5X2dyb3VwcyI6e30sInVuaXZlcnNlX21lYXN1cmVtZW50X2F1dGhvcml0aWVzIjp7fSwidmFsaWRfbWVhc3VyZW1lbnRfcmVjZWlwdF9jb3VudCI6MH0sIndpdG5lc3NfcXVvcnVtX2Fzc3VyYW5jZSI6eyJhdXRob3JpdHlfaWRzIjpbXSwiYXV0aG9yaXR5X3B1YmxpY19rZXlzIjpbXSwiY291bnRlcmV4YW1wbGVfY2hlY2tfaWRzIjpbXSwiY292ZXJlZF9jaGVja19pZHMiOltdLCJkaXNhZ3JlZW1lbnRfY2hlY2tfaWRzIjpbXSwiaW52YWxpZF9hdXRob3JpdHlfaWRzIjpbXSwicmVxdWlyZWRfYXV0aG9yaXR5X3F1b3J1bSI6MCwic2VsZWN0ZWRfY2hlY2tfaWRzIjpbXSwic2VsZWN0aW9uX3ZlcmlmaWVkIjpmYWxzZSwic3RhdHVzIjoiTk9UX1JFUVVJUkVEIiwidW5yZXNvbHZlZF9jaGVja19pZHMiOltdLCJ2YWxpZF9hdXRob3JpdHlfY291bnQiOjB9LCJ3aXRuZXNzX3JlZ2lzdHJ5X2FuY2VzdHJ5X2Fzc3VyYW5jZSI6eyJlcnJvcnMiOltdLCJpbnZhbGlkX3JlZ2lzdHJ5X2FuY2VzdHJ5X21hbmlmZXN0cyI6W10sIm1pc3NpbmdfcmVnaXN0cnlfYW5jZXN0cnlfYmluZGluZ3MiOltdLCJyZWdpc3RyeV9hbmNlc3RyeV9tYW5pZmVzdF9jb3VudCI6MCwicmVnaXN0cnlfYW5jZXN0cnlfb3ZlcmxhcF9maW5nZXJwcmludHMiOnt9LCJyZWdpc3RyeV9hbmNlc3RyeV9yb290X2ZpbmdlcnByaW50cyI6e30sInN0YXR1cyI6Ik5PVF9SRVFVSVJFRCIsInZhbGlkX3JlZ2lzdHJ5X2FuY2VzdHJ5X21hbmlmZXN0X2NvdW50IjowfSwid2l0bmVzc19yZWdpc3RyeV9hc3N1cmFuY2UiOnsiZXJyb3JzIjpbXSwiaW52YWxpZF9hdHRlc3RhdGlvbnMiOltdLCJuZWdhdGl2ZV9hdHRlc3RhdGlvbnMiOltdLCJyZWdpc3RyeV9hdHRlc3RhdGlvbl9jb3VudCI6MCwicmVnaXN0cnlfZGlzY2xvc3VyZV9taXNtYXRjaGVzIjp7fSwicmVnaXN0cnlfc291cmNlX2dyb3VwcyI6e30sInN0YXR1cyI6Ik5PVF9SRVFVSVJFRCIsInZhbGlkX3JlZ2lzdHJ5X2F1dGhvcml0eV9jb3VudHMiOnt9fSwid2l0bmVzc19yZWdpc3RyeV9vYnNlcnZhdGlvbl9hc3N1cmFuY2UiOnsiZXJyb3JzIjpbXSwiaW52YWxpZF9vYnNlcnZhdGlvbnMiOltdLCJuZWdhdGl2ZV9vYnNlcnZhdGlvbnMiOltdLCJvYnNlcnZhdGlvbl9jb3VudCI6MCwib2JzZXJ2ZXJfc291cmNlX2dyb3VwcyI6e30sInJlZ2lzdHJ5X29ic2VydmF0aW9uX2Rpc2Nsb3N1cmVfbWlzbWF0Y2hlcyI6e30sInN0YXR1cyI6Ik5PVF9SRVFVSVJFRCIsInZhbGlkX29ic2VydmVyX2NvdW50cyI6e319fSwiaXNzdWVkX2F0IjoiMjAyNi0wOC0yOVQyMzozNDo1OS43OTEyOTMrMDA6MDAiLCJpc3N1ZXIiOnsiY2xvdWRfc2VydmljZSI6Ikdvb2dsZSBDbG91ZCBSdW4iLCJkZWNpc2lvbl9zdG9yZSI6ImZpcmVzdG9yZSIsImttc19rZXlfdmVyc2lvbiI6InByb2plY3RzL3Byb2plY3QtYmQ5OGY2NmYtYzdiMC00OWIxLWI3My9sb2NhdGlvbnMvZ2xvYmFsL2tleVJpbmdzL2lsbHVzaW9udGlvbi1wcm9vZi1yaW5nL2NyeXB0b0tleXMvaWxsdXNpb250aW9uLXByb29mLXNpZ25pbmcta2V5L2NyeXB0b0tleVZlcnNpb25zLzEiLCJtb2RlbCI6ImdlbWluaS0zLjctZmxhc2giLCJwdWJsaWNfa2V5X3NoYTI1NiI6ImY2ZjJmZTQxZWY4NGMxNThmNzlkOWJkYjVhYjljYmFhNzFhOGNiNWYyYWViODA4MjU3OGQxODM2YzYyM2ZiYjgiLCJyZWdpb24iOiJtZS13ZXN0MSIsInN5c3RlbSI6IklsbHVzaW9udGlvbiJ9LCJwcm9vZl9zY2hlbWEiOiJpbGx1c2lvbnRpb24uZXh0ZXJuYWwtcHJvb2YudjEiLCJwcm9vZl90eXBlIjoiZ292ZXJuZWRfZGVjaXNpb24ifQ==",
+    "claim_id": "hackathon-final-fortified-007",
+    "kms_key_version": "projects/project-bd98f66f-c7b0-49b1-b73/locations/global/keyRings/illusiontion-proof-ring/cryptoKeys/illusiontion-proof-signing-key/cryptoKeyVersions/1",
+    "proof_schema": "illusiontion.external-proof.v1",
+    "proof_sha256": "0116728fd8e2f08b21698c4dcebb40b846c009fe1d7ab81d052323c48cf4fefa",
+    "public_key_sha256": "f6f2fe41ef84c158f79d9bdb5ab9cbaa71a8cb5f2aeb8082578d1836c623fbb8",
+    "signature_base64": "MEUCICIgHfTosffelMpdvWsNw8Lgm5Aul9SY6KpCbUlBwp2ZAiEAtZukvH/rhxfjoXJclDYAdftzZzhouo1T1l5G3LLfdj0=",
+    "signature_sha256": "6466799f4eda7ba5e4e75cd5c163e6ba2614034086dc76e2f106991a0b164dcf"
+  },
+  "reviewer_receipts": [
+    {
+      "attempt_context_sha256": "",
+      "claim_sha256": "72c2760d57c294fbdd8d87d4f9facebbeffbb3dcd0ed5f8a0f4a14f4de098065",
+      "context_mode": "ISOLATED",
+      "detail": "",
+      "evidence_digests": {
+        "e1": "de3abadfd949473021f08e5e1ca6995e18beda1c78498efcb15abe1ea6075489",
+        "e2": "6b6ab16eac3beed4bd071baa0e54eaec3640e8eefd026e1d3dd32cdc1fd4f7fa",
+        "e3": "a57bdf1bd7168e180163f414698383178669f50292683f0f36051d9edce1b901",
+        "e4": "e08dbe1dbf64138029a878b10d6afbf87407c82d066b18d9cab51accfdb8379f",
+        "e5": "412d799dc0426ea7df540c51df8c2112f76bccc11bb9ad22d790beb193936b60"
+      },
+      "execution_mode": "MODEL_LIVE",
+      "findings_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "invocation_id": "inv-00499a3294e4b16d170fe9175cc57f92",
+      "invocation_sha256": "3c9fc95ef99c0527fc8b434e19a5838bdd3ec59fefa0edba3b2303f5f86ad0ba",
+      "model_id": "gemini-3.7-flash",
+      "model_provider": "google-vertex-generate-content",
+      "model_response_id": "NWyTatmPPND4z_IPsPCayQM",
+      "prompt_sha256": "917d4bd2e04754917f7899505e95c27e08a833b9d1c86250bced17b71cbce7e7",
+      "raw_output_sha256": "84735c2498f98876f639cb7aeffebcf44795db29a443e4c631d8aa57b2bcf012",
+      "raw_output_utf8_bytes": 1561,
+      "response_schema_sha256": "3b5466b98573a738ed3f521f102bd4beff50aa7cb247e1d97ccfbac06b881b4e",
+      "reviewer": "decomposer",
+      "run_token": "run-3d54d2c092f2b046f2d2efcf02563048",
+      "runtime_signature": "3584e91b038e4ee6af0b62dbed56bcc1511f565838eb1c2876d8cd5998f761b1",
+      "semantic_artifacts_sha256": "d4698a0c8c5f68227757004d7afda02263c13c5cd71ab51e11a0a1a87888b345",
+      "status": "SUCCESS",
+      "upstream_review_digests": []
+    },
+    {
+      "attempt_context_sha256": "",
+      "claim_sha256": "72c2760d57c294fbdd8d87d4f9facebbeffbb3dcd0ed5f8a0f4a14f4de098065",
+      "context_mode": "ISOLATED",
+      "detail": "",
+      "evidence_digests": {
+        "e1": "de3abadfd949473021f08e5e1ca6995e18beda1c78498efcb15abe1ea6075489",
+        "e2": "6b6ab16eac3beed4bd071baa0e54eaec3640e8eefd026e1d3dd32cdc1fd4f7fa",
+        "e3": "a57bdf1bd7168e180163f414698383178669f50292683f0f36051d9edce1b901",
+        "e4": "e08dbe1dbf64138029a878b10d6afbf87407c82d066b18d9cab51accfdb8379f",
+        "e5": "412d799dc0426ea7df540c51df8c2112f76bccc11bb9ad22d790beb193936b60"
+      },
+      "execution_mode": "MODEL_LIVE",
+      "findings_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "invocation_id": "inv-33106bdab87b55e4f2092297b7cd09fa",
+      "invocation_sha256": "0317ed442c0588c77f49c9263210c69e08ab681360d8445b76139b7804681f58",
+      "model_id": "gemini-3.7-flash",
+      "model_provider": "google-vertex-generate-content",
+      "model_response_id": "RGyTarOvIYW7mPUP2b_UkA8",
+      "prompt_sha256": "8ee18a2b783d7f5f3a7c454d7734bba708dc2d12fbdc5f6ef4cc586417a86073",
+      "raw_output_sha256": "a08b39f23d580355a320a86e9f46adffe522f1ed95bce1f5743267874675d678",
+      "raw_output_utf8_bytes": 284,
+      "response_schema_sha256": "3b5466b98573a738ed3f521f102bd4beff50aa7cb247e1d97ccfbac06b881b4e",
+      "reviewer": "evidence",
+      "run_token": "run-8fcc2eeac61ad34ee4c70da3d3d02a33",
+      "runtime_signature": "60081f5a59bb9224d939fa43dc23279cbab4b0479fc06b544f1ebd27fcf75beb",
+      "semantic_artifacts_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "status": "SUCCESS",
+      "upstream_review_digests": []
+    },
+    {
+      "attempt_context_sha256": "",
+      "claim_sha256": "72c2760d57c294fbdd8d87d4f9facebbeffbb3dcd0ed5f8a0f4a14f4de098065",
+      "context_mode": "ISOLATED",
+      "detail": "",
+      "evidence_digests": {
+        "e1": "de3abadfd949473021f08e5e1ca6995e18beda1c78498efcb15abe1ea6075489",
+        "e2": "6b6ab16eac3beed4bd071baa0e54eaec3640e8eefd026e1d3dd32cdc1fd4f7fa",
+        "e3": "a57bdf1bd7168e180163f414698383178669f50292683f0f36051d9edce1b901",
+        "e4": "e08dbe1dbf64138029a878b10d6afbf87407c82d066b18d9cab51accfdb8379f",
+        "e5": "412d799dc0426ea7df540c51df8c2112f76bccc11bb9ad22d790beb193936b60"
+      },
+      "execution_mode": "MODEL_LIVE",
+      "findings_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "invocation_id": "inv-3b4f0f05443d12eafb52bdcea7629d7b",
+      "invocation_sha256": "fb87ec2bebe9240c149ae1d00134adf6901153f079d6896d0d85ef7f1a5d6e3d",
+      "model_id": "gemini-3.7-flash",
+      "model_provider": "google-vertex-generate-content",
+      "model_response_id": "UWyTat3YJrOymPUPk56LsA8",
+      "prompt_sha256": "36bb9f36feffe206cadf2bc77ab7ca0508f83cb38dce5c9fd905b4e3b3ee7d4f",
+      "raw_output_sha256": "754a8cf49cc347eda0c02dba3d32ce70c5a14775f216163eb0f1e2bb80a9d4b6",
+      "raw_output_utf8_bytes": 4770,
+      "response_schema_sha256": "3b5466b98573a738ed3f521f102bd4beff50aa7cb247e1d97ccfbac06b881b4e",
+      "reviewer": "challenger",
+      "run_token": "run-bbbff5e3769c080604b0622421f52069",
+      "runtime_signature": "cc331e61e7fa6f2af52c52aff5fe64e8687600e29316d8fdabe07717996716f4",
+      "semantic_artifacts_sha256": "b6d12c908794ebecff42d6c1cef5b5e8b91d53e933d4cafb19533622df98b42e",
+      "status": "SUCCESS",
+      "upstream_review_digests": []
+    },
+    {
+      "attempt_context_sha256": "",
+      "claim_sha256": "72c2760d57c294fbdd8d87d4f9facebbeffbb3dcd0ed5f8a0f4a14f4de098065",
+      "context_mode": "ISOLATED",
+      "detail": "",
+      "evidence_digests": {
+        "e1": "de3abadfd949473021f08e5e1ca6995e18beda1c78498efcb15abe1ea6075489",
+        "e2": "6b6ab16eac3beed4bd071baa0e54eaec3640e8eefd026e1d3dd32cdc1fd4f7fa",
+        "e3": "a57bdf1bd7168e180163f414698383178669f50292683f0f36051d9edce1b901",
+        "e4": "e08dbe1dbf64138029a878b10d6afbf87407c82d066b18d9cab51accfdb8379f",
+        "e5": "412d799dc0426ea7df540c51df8c2112f76bccc11bb9ad22d790beb193936b60"
+      },
+      "execution_mode": "MODEL_LIVE",
+      "findings_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "invocation_id": "inv-1e837f9f5886894f5207863f5f23e3af",
+      "invocation_sha256": "aeb88d809f4baad3d6b03297abec5da8e4d610806b085c7cc898584a924d602a",
+      "model_id": "gemini-3.7-flash",
+      "model_provider": "google-vertex-generate-content",
+      "model_response_id": "YGyTapDXILCamPUPq8mP-QQ",
+      "prompt_sha256": "b94a416b75dd6b7dfbaa09d83d06e3f4e682f40a206a65b816c8ec5b747c7040",
+      "raw_output_sha256": "5200463dbe087aaad64a608cd7eb8bbb5f7e8d04260efeb19b02e5ed90c91ac2",
+      "raw_output_utf8_bytes": 361,
+      "response_schema_sha256": "3b5466b98573a738ed3f521f102bd4beff50aa7cb247e1d97ccfbac06b881b4e",
+      "reviewer": "scope",
+      "run_token": "run-45692ba10c05e8d1370f4e2ec6e81a51",
+      "runtime_signature": "ee8a197f6bb1ee6b6a16ae58c7269a24d27fd597a07c1061d1fa33a567a42b8a",
+      "semantic_artifacts_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "status": "SUCCESS",
+      "upstream_review_digests": []
+    },
+    {
+      "attempt_context_sha256": "",
+      "claim_sha256": "72c2760d57c294fbdd8d87d4f9facebbeffbb3dcd0ed5f8a0f4a14f4de098065",
+      "context_mode": "ISOLATED",
+      "detail": "",
+      "evidence_digests": {
+        "e1": "de3abadfd949473021f08e5e1ca6995e18beda1c78498efcb15abe1ea6075489",
+        "e2": "6b6ab16eac3beed4bd071baa0e54eaec3640e8eefd026e1d3dd32cdc1fd4f7fa",
+        "e3": "a57bdf1bd7168e180163f414698383178669f50292683f0f36051d9edce1b901",
+        "e4": "e08dbe1dbf64138029a878b10d6afbf87407c82d066b18d9cab51accfdb8379f",
+        "e5": "412d799dc0426ea7df540c51df8c2112f76bccc11bb9ad22d790beb193936b60"
+      },
+      "execution_mode": "MODEL_LIVE",
+      "findings_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "invocation_id": "inv-a4ce38e3c0b67751c45c2089e8fdcaae",
+      "invocation_sha256": "07e3c846a40c5a95514d87a09999662a772983df9fc68a21bc0cc8551557f0c1",
+      "model_id": "gemini-3.7-flash",
+      "model_provider": "google-vertex-generate-content",
+      "model_response_id": "bWyTatGwELTImPUPk6jTkQs",
+      "prompt_sha256": "36f3e5eac91dcc79b9bebea13c1ab547262f13afb8aa43f73847161a59a450a3",
+      "raw_output_sha256": "0c456f454233e41613cb87d7b5d6ff7a80785dce14c387539f29cc5b94ff9514",
+      "raw_output_utf8_bytes": 311,
+      "response_schema_sha256": "3b5466b98573a738ed3f521f102bd4beff50aa7cb247e1d97ccfbac06b881b4e",
+      "reviewer": "security",
+      "run_token": "run-5a49e65304acdfeddd07f708ba882221",
+      "runtime_signature": "d68b51ad1605e8424ef87d3a72e7978292e2d233d151fd11affd39416b02666a",
+      "semantic_artifacts_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "status": "SUCCESS",
+      "upstream_review_digests": []
+    },
+    {
+      "attempt_context_sha256": "",
+      "claim_sha256": "72c2760d57c294fbdd8d87d4f9facebbeffbb3dcd0ed5f8a0f4a14f4de098065",
+      "context_mode": "ISOLATED",
+      "detail": "",
+      "evidence_digests": {
+        "e1": "de3abadfd949473021f08e5e1ca6995e18beda1c78498efcb15abe1ea6075489",
+        "e2": "6b6ab16eac3beed4bd071baa0e54eaec3640e8eefd026e1d3dd32cdc1fd4f7fa",
+        "e3": "a57bdf1bd7168e180163f414698383178669f50292683f0f36051d9edce1b901",
+        "e4": "e08dbe1dbf64138029a878b10d6afbf87407c82d066b18d9cab51accfdb8379f",
+        "e5": "412d799dc0426ea7df540c51df8c2112f76bccc11bb9ad22d790beb193936b60"
+      },
+      "execution_mode": "MODEL_LIVE",
+      "findings_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "invocation_id": "inv-6ac55307bff454f62dc0b834964b7027",
+      "invocation_sha256": "c284c423332fa767d4e8f379ea2afec96ef47babb6994b9bdbbc49e2c6c3c305",
+      "model_id": "gemini-3.7-flash",
+      "model_provider": "google-vertex-generate-content",
+      "model_response_id": "fWyTauH3O4658uMP1oa2wQQ",
+      "prompt_sha256": "1b3ec368abca9a7a7168369cf410564e0aa4fecadac47eedce1622a44524dba3",
+      "raw_output_sha256": "62c43719e4215addd7f6ae0b46f569dbc735c4ba1ddf272f2ac0de927d3a81a8",
+      "raw_output_utf8_bytes": 5306,
+      "response_schema_sha256": "3b5466b98573a738ed3f521f102bd4beff50aa7cb247e1d97ccfbac06b881b4e",
+      "reviewer": "entailment",
+      "run_token": "run-279f271bcbd88a8fb90ec4f53645f681",
+      "runtime_signature": "f36581316c90e8d120692102d02189365cab0e0f61fa8a61ceb3174418c79b78",
+      "semantic_artifacts_sha256": "9bf2781d5c1efa84b0b89c3d37b6770d31286bd2548c1401c7f7efd9e33bf532",
+      "status": "SUCCESS",
+      "upstream_review_digests": []
+    },
+    {
+      "attempt_context_sha256": "",
+      "claim_sha256": "72c2760d57c294fbdd8d87d4f9facebbeffbb3dcd0ed5f8a0f4a14f4de098065",
+      "context_mode": "ISOLATED",
+      "detail": "",
+      "evidence_digests": {
+        "e1": "de3abadfd949473021f08e5e1ca6995e18beda1c78498efcb15abe1ea6075489",
+        "e2": "6b6ab16eac3beed4bd071baa0e54eaec3640e8eefd026e1d3dd32cdc1fd4f7fa",
+        "e3": "a57bdf1bd7168e180163f414698383178669f50292683f0f36051d9edce1b901",
+        "e4": "e08dbe1dbf64138029a878b10d6afbf87407c82d066b18d9cab51accfdb8379f",
+        "e5": "412d799dc0426ea7df540c51df8c2112f76bccc11bb9ad22d790beb193936b60"
+      },
+      "execution_mode": "MODEL_LIVE",
+      "findings_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "invocation_id": "inv-d813daa0baa9e3bb66e3a1b5c886adb8",
+      "invocation_sha256": "3888fb538d90615657372891a9984e06953126313759990e4d59db26d81aefa3",
+      "model_id": "gemini-3.7-flash",
+      "model_provider": "google-vertex-generate-content",
+      "model_response_id": "kGyTaozOLp-i8uMP0ejQwAM",
+      "prompt_sha256": "ca1f7040255f907cd6ff2e2408172e027ef82de7cf30d4bbebadeec369c67dc4",
+      "raw_output_sha256": "2c4b88dde6458f17de1ef65139965fe76b9c280fed54b82b52d6edd75bc06ec8",
+      "raw_output_utf8_bytes": 4447,
+      "response_schema_sha256": "3b5466b98573a738ed3f521f102bd4beff50aa7cb247e1d97ccfbac06b881b4e",
+      "reviewer": "counterexample",
+      "run_token": "run-6b42ace92f88fc0e0e5178ae795a199f",
+      "runtime_signature": "74b4270cca0928a0b7d33de6b28ffd80ecf215337b8ec478d90e6ed892a913cc",
+      "semantic_artifacts_sha256": "b4d19cbcca1f42a1529c3c94364c821760590eae0f9a620b576055f03392768d",
+      "status": "SUCCESS",
+      "upstream_review_digests": []
+    }
+  ],
+  "reviewer_trace_count": 7
+}
